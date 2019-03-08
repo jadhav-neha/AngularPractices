@@ -6,6 +6,8 @@ import {EventListComponent} from './eventlist.component'
 import {EventsThumbnailComponent} from './eventsthumbnail.component'
 import{ NavbarComponentapp} from './nav/navbar.component'
 
+import{ EventService} from './event.service'
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,7 @@ import{ NavbarComponentapp} from './nav/navbar.component'
   imports: [
     BrowserModule
   ],
-  // providers: [],
+ providers: [EventService],
   bootstrap: [Eventscomponentapp]
 })
 export class AppModule { }
